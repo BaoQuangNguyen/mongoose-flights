@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<style>h1 {
+    margin-top: 40px;
+    font-size: 40px;
+}</style>
+
+<%- include('./partials/header') %>
+<form action="/flights/new" method="GET">
+<h1>Airport Registry</h1>
+
+<button type="submit">Add a Flight</button>
+</form>
+<%- include('./partials/footer') %>
